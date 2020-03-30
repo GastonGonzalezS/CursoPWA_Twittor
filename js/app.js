@@ -3,7 +3,7 @@ var url = window.location.href;
 var swLocation = '/CursoPWA_Twittor/sw.js';
 
 if (navigator.serviceWorker){
-  if(url.includes('localHost')){
+  if(url.includes('localhost')){
       swLocation = '/sw.js';
   }
     navigator.serviceWorker.register(swLocation);
